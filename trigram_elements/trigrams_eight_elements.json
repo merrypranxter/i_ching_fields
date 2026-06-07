@@ -1,0 +1,238 @@
+{
+  "encoding_note": "Trigram values: 3-bit integer where bit 0 = bottom line, bit 2 = top line. Heaven=7(111), Earth=0(000), Thunder=1(001), Water=2(010), Mountain=4(100), Wind=6(110), Fire=5(101), Lake=3(011).",
+  "arrangement_note": "Later Heaven (King Wen) arrangement used for directional/seasonal associations. Earlier Heaven (Fu Xi) arrangement shows cosmic polarity.",
+  "trigrams": [
+    {
+      "value": 7,
+      "binary": "111",
+      "name_en": "Heaven",
+      "name_zh": "乾",
+      "pinyin": "Qián",
+      "element": "Metal/Sky",
+      "direction_later_heaven": "Northwest",
+      "direction_earlier_heaven": "South",
+      "season": "Late Autumn",
+      "time_of_day": "Evening",
+      "attribute": "Creative, Strong, Persevering",
+      "family_member": "Father",
+      "color": [
+        1.0,
+        0.92,
+        0.45
+      ],
+      "force_vector": [
+        0.0,
+        1.0
+      ],
+      "body_part": "Head",
+      "animal": "Horse",
+      "lo_shu_number": 6,
+      "quality": "Pure yang, ceaseless movement, the Creative force that initiates all things",
+      "image": "Sky, Dragon",
+      "Wilhelm_note": "The Creative. Its energy is symbolized by dragons. Works with undivided lines; image is movement of heaven."
+    },
+    {
+      "value": 0,
+      "binary": "000",
+      "name_en": "Earth",
+      "name_zh": "坤",
+      "pinyin": "Kūn",
+      "element": "Earth/Soil",
+      "direction_later_heaven": "Southwest",
+      "direction_earlier_heaven": "North",
+      "season": "Late Summer",
+      "time_of_day": "Midnight",
+      "attribute": "Receptive, Yielding, Devoted",
+      "family_member": "Mother",
+      "color": [
+        0.35,
+        0.55,
+        0.2
+      ],
+      "force_vector": [
+        0.0,
+        -1.0
+      ],
+      "body_part": "Belly/Womb",
+      "animal": "Cow/Mare",
+      "lo_shu_number": 2,
+      "quality": "Pure yin, receives the Creative; completes and brings forth; the mare embodies its nature",
+      "image": "Earth, Mare",
+      "Wilhelm_note": "The Receptive. The mare is the symbol of the sublimity of the earth; its energy is devoted and yielding."
+    },
+    {
+      "value": 1,
+      "binary": "001",
+      "name_en": "Thunder",
+      "name_zh": "震",
+      "pinyin": "Zhèn",
+      "element": "Wood/Thunder",
+      "direction_later_heaven": "East",
+      "direction_earlier_heaven": "Northeast",
+      "season": "Spring",
+      "time_of_day": "Dawn",
+      "attribute": "Arousing, Shocking, Initiating",
+      "family_member": "Eldest Son",
+      "color": [
+        0.9,
+        0.55,
+        0.1
+      ],
+      "force_vector": [
+        1.0,
+        0.2
+      ],
+      "body_part": "Foot",
+      "animal": "Dragon/Horse",
+      "lo_shu_number": 3,
+      "quality": "One yang below two yins; the first stirring, like a seed cracking open; movement and shock",
+      "image": "Thunder, Earthquake",
+      "Wilhelm_note": "The Arousing. Its motion is upward. It appears in the east. Its image is thunder."
+    },
+    {
+      "value": 2,
+      "binary": "010",
+      "name_en": "Water",
+      "name_zh": "坎",
+      "pinyin": "Kǎn",
+      "element": "Water",
+      "direction_later_heaven": "North",
+      "direction_earlier_heaven": "West",
+      "season": "Winter",
+      "time_of_day": "Midnight",
+      "attribute": "Dangerous, Abysmal, Penetrating downward",
+      "family_member": "Middle Son",
+      "color": [
+        0.1,
+        0.3,
+        0.85
+      ],
+      "force_vector": [
+        0.0,
+        -0.9
+      ],
+      "body_part": "Ear/Kidney",
+      "animal": "Pig/Fish",
+      "lo_shu_number": 1,
+      "quality": "One yang enclosed by two yins; like water filling a pit; flows to low places, finds its way through",
+      "image": "Rain, River, Pit",
+      "Wilhelm_note": "The Abysmal. Water flows on undivided; it reaches its goal and does not shrink from danger."
+    },
+    {
+      "value": 4,
+      "binary": "100",
+      "name_en": "Mountain",
+      "name_zh": "艮",
+      "pinyin": "Gèn",
+      "element": "Earth/Mountain",
+      "direction_later_heaven": "Northeast",
+      "direction_earlier_heaven": "Northwest",
+      "season": "Late Winter",
+      "time_of_day": "Pre-dawn",
+      "attribute": "Keeping Still, Resting, Blocking",
+      "family_member": "Youngest Son",
+      "color": [
+        0.52,
+        0.48,
+        0.42
+      ],
+      "force_vector": [
+        0.0,
+        0.0
+      ],
+      "body_part": "Hand/Back",
+      "animal": "Dog/Bull",
+      "lo_shu_number": 8,
+      "quality": "One yang atop two yins; like a mountain — immovable, the threshold between worlds",
+      "image": "Mountain, Gate, Doorstep",
+      "Wilhelm_note": "Keeping Still. Its image is the mountain. The beginning and end of all movement."
+    },
+    {
+      "value": 6,
+      "binary": "110",
+      "name_en": "Wind",
+      "name_zh": "巽",
+      "pinyin": "Xùn",
+      "element": "Wood/Wind",
+      "direction_later_heaven": "Southeast",
+      "direction_earlier_heaven": "Southwest",
+      "season": "Late Spring",
+      "time_of_day": "Morning",
+      "attribute": "Gentle, Penetrating, Permeating",
+      "family_member": "Eldest Daughter",
+      "color": [
+        0.45,
+        0.82,
+        0.5
+      ],
+      "force_vector": [
+        0.8,
+        0.3
+      ],
+      "body_part": "Thigh/Hip",
+      "animal": "Fowl/Rooster",
+      "lo_shu_number": 4,
+      "quality": "One yin below two yangs; penetrates everywhere; the eldest daughter who follows the father's creative",
+      "image": "Wind, Wood, Breath",
+      "Wilhelm_note": "The Gentle. Its image is wood, wind. It penetrates everywhere, gentle and persistent."
+    },
+    {
+      "value": 5,
+      "binary": "101",
+      "name_en": "Fire",
+      "name_zh": "離",
+      "pinyin": "Lí",
+      "element": "Fire",
+      "direction_later_heaven": "South",
+      "direction_earlier_heaven": "East",
+      "season": "Summer",
+      "time_of_day": "Noon",
+      "attribute": "Clinging, Brightness, Dependence",
+      "family_member": "Middle Daughter",
+      "color": [
+        1.0,
+        0.25,
+        0.05
+      ],
+      "force_vector": [
+        0.0,
+        0.9
+      ],
+      "body_part": "Eye",
+      "animal": "Pheasant/Crab",
+      "lo_shu_number": 9,
+      "quality": "One yin enclosed by two yangs; fire clings to what it burns; brightness and clarity but dependent on fuel",
+      "image": "Fire, Sun, Lightning",
+      "Wilhelm_note": "The Clinging. Fire clings to what it illuminates, as the sun illuminates the heaven."
+    },
+    {
+      "value": 3,
+      "binary": "011",
+      "name_en": "Lake",
+      "name_zh": "兌",
+      "pinyin": "Duì",
+      "element": "Metal/Lake",
+      "direction_later_heaven": "West",
+      "direction_earlier_heaven": "Southeast",
+      "season": "Autumn",
+      "time_of_day": "Dusk",
+      "attribute": "Joyous, Pleasure, Open",
+      "family_member": "Youngest Daughter",
+      "color": [
+        0.25,
+        0.7,
+        0.95
+      ],
+      "force_vector": [
+        -0.3,
+        0.6
+      ],
+      "body_part": "Mouth",
+      "animal": "Sheep/Bird",
+      "lo_shu_number": 7,
+      "quality": "One yin atop two yangs; like a still lake open to heaven; joy and pleasure, the youngest daughter",
+      "image": "Lake, Marsh, Open Mouth",
+      "Wilhelm_note": "The Joyous. The lake gives joy to all things. It invigorates and refreshes all living things."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "method": "Yarrow Stem (蓍草 shīcǎo) Probability Weights",
+  "description": "The traditional yarrow stem method of I Ching divination produces four possible line values per cast. These arise from dividing 49 stalks into groups three times, counting remainders. The probabilities are exact fractions.",
+  "stalks_used": 49,
+  "line_values": [
+    {
+      "value": 6,
+      "name": "Old Yin (太陰 Tài Yīn)",
+      "line_type": "yin",
+      "moving": true,
+      "changes_to": 7,
+      "changes_to_name": "Young Yang",
+      "probability_fraction": "1/16",
+      "probability_decimal": 0.0625,
+      "numerator": 1,
+      "denominator": 16,
+      "color_suggestion": "cyan",
+      "description": "Moving yin line — broken, but in motion. Changes to yang in the resultant hexagram. Rarest line type. Represents fulfilled yin energy ready to transform.",
+      "symbol": "— ×"
+    },
+    {
+      "value": 7,
+      "name": "Young Yang (少陽 Shào Yáng)",
+      "line_type": "yang",
+      "moving": false,
+      "changes_to": null,
+      "probability_fraction": "5/16",
+      "probability_decimal": 0.3125,
+      "numerator": 5,
+      "denominator": 16,
+      "color_suggestion": "amber",
+      "description": "Stable yang line — solid, at rest. The line you want most often. Does not change. Second most common.",
+      "symbol": "———"
+    },
+    {
+      "value": 8,
+      "name": "Young Yin (少陰 Shào Yīn)",
+      "line_type": "yin",
+      "moving": false,
+      "changes_to": null,
+      "probability_fraction": "7/16",
+      "probability_decimal": 0.4375,
+      "numerator": 7,
+      "denominator": 16,
+      "color_suggestion": "indigo",
+      "description": "Stable yin line — broken, at rest. The most common line. Does not change. Represents quiescent receptivity.",
+      "symbol": "— —"
+    },
+    {
+      "value": 9,
+      "name": "Old Yang (太陽 Tài Yáng)",
+      "line_type": "yang",
+      "moving": true,
+      "changes_to": 8,
+      "changes_to_name": "Young Yin",
+      "probability_fraction": "3/16",
+      "probability_decimal": 0.1875,
+      "numerator": 3,
+      "denominator": 16,
+      "color_suggestion": "crimson",
+      "description": "Moving yang line — solid, but in motion. Changes to yin in the resultant hexagram. Third most common. Represents creative force at its peak, about to transform.",
+      "symbol": "——○"
+    }
+  ],
+  "probability_derivation": {
+    "note": "Three divisions of 49 stalks. Each division assigns stalks to piles and counts by groups of 4. The remainders (1 or 2 for odd divisions, 2 or 4 for even) determine line value.",
+    "stalk_count": 49,
+    "operations": "Divide 49 stalks by hand 3 times per line, count remainder groups mod 4",
+    "cumulative_weights": {
+      "6_threshold": 0.0625,
+      "7_threshold": 0.375,
+      "8_threshold": 0.8125,
+      "9_threshold": 1.0
+    },
+    "glsl_cast_function": "float castLine(float seed) { float r = hash(seed); if (r < 1.0/16.0) return 6.0; if (r < 6.0/16.0) return 7.0; if (r < 13.0/16.0) return 8.0; return 9.0; }"
+  },
+  "changing_line_transformation": {
+    "note": "When a hexagram has changing lines, it transforms to a second hexagram. Moving lines flip; stable lines stay.",
+    "rule_6_to_yang": "Old yin (6) → young yang (7): broken line becomes solid",
+    "rule_9_to_yin": "Old yang (9) → young yin (8): solid line becomes broken",
+    "rule_stable": "Young yang (7) and young yin (8) remain unchanged"
+  },
+  "coin_method_comparison": {
+    "description": "The three-coin method gives different probabilities from yarrow stems:",
+    "coin_probabilities": {
+      "6_old_yin": "3/16 = 0.1875 (3 tails)",
+      "7_young_yang": "6/16 = 0.375 (2 tails 1 head: value 7 = tail=2, head=3, sum=7)",
+      "8_young_yin": "6/16 = 0.375 (2 heads 1 tail)",
+      "9_old_yang": "1/16 = 0.0625 (3 heads)"
+    },
+    "note": "Yarrow stem method gives more young yin (stable) lines, fewer old yin (moving yin). The oracle is more stable under yarrow stems."
+  }
+}
