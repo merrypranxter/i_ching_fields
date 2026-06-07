@@ -1,0 +1,3021 @@
+{
+  "description": "Changing line transformation rules for the cellular automaton. For each hexagram, changing lines produce a new hexagram. Moving yang (9)→yin (8), moving yin (6)→yang (7).",
+  "classic_rules": {
+    "old_yang_9": "Solid line (yang=1) changes to broken (yin=0): bit flips 1→0",
+    "old_yin_6": "Broken line (yin=0) changes to solid (yang=1): bit flips 0→1",
+    "young_yang_7": "Stable solid line: no change",
+    "young_yin_8": "Stable broken line: no change"
+  },
+  "cellular_automaton_rule": "new_bit = 1 - old_bit if moving, else old_bit. Equivalent to XOR with a mask of changing lines.",
+  "boundary_rule": "For spatial automaton: each cell's changing lines determined by XOR pressure from neighbors. neighbor_xor = left_hex XOR right_hex. Bits set in neighbor_xor become candidates for changing lines.",
+  "hexagram_transformations": [
+    {
+      "number": 1,
+      "name_en": "The Creative",
+      "binary": 63,
+      "all_lines_change": 0,
+      "all_lines_change_number": 2,
+      "nuclear": 63,
+      "reverse": 63,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 62,
+          "result_number": 44
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 61,
+          "result_number": 13
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 59,
+          "result_number": 10
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 55,
+          "result_number": 9
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 47,
+          "result_number": 14
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 31,
+          "result_number": 43
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name_en": "The Receptive",
+      "binary": 0,
+      "all_lines_change": 63,
+      "all_lines_change_number": 1,
+      "nuclear": 0,
+      "reverse": 0,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 1,
+          "result_number": 24
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 2,
+          "result_number": 7
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 4,
+          "result_number": 15
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 8,
+          "result_number": 16
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 16,
+          "result_number": 8
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 32,
+          "result_number": 23
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name_en": "Difficulty at the Beginning",
+      "binary": 17,
+      "all_lines_change": 46,
+      "all_lines_change_number": 50,
+      "nuclear": 32,
+      "reverse": 34,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 16,
+          "result_number": 8
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 19,
+          "result_number": 60
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 21,
+          "result_number": 63
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 25,
+          "result_number": 17
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 1,
+          "result_number": 24
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 49,
+          "result_number": 42
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "name_en": "Youthful Folly",
+      "binary": 34,
+      "all_lines_change": 29,
+      "all_lines_change_number": 49,
+      "nuclear": 1,
+      "reverse": 17,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 35,
+          "result_number": 41
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 32,
+          "result_number": 23
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 38,
+          "result_number": 18
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 42,
+          "result_number": 64
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 50,
+          "result_number": 59
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 2,
+          "result_number": 7
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "name_en": "Waiting (Nourishment)",
+      "binary": 23,
+      "all_lines_change": 40,
+      "all_lines_change_number": 35,
+      "nuclear": 43,
+      "reverse": 58,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 22,
+          "result_number": 48
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 21,
+          "result_number": 63
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 19,
+          "result_number": 60
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 31,
+          "result_number": 43
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 7,
+          "result_number": 11
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 55,
+          "result_number": 9
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "name_en": "Conflict",
+      "binary": 58,
+      "all_lines_change": 5,
+      "all_lines_change_number": 36,
+      "nuclear": 53,
+      "reverse": 23,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 59,
+          "result_number": 10
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 56,
+          "result_number": 12
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 62,
+          "result_number": 44
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 50,
+          "result_number": 59
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 42,
+          "result_number": 64
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 26,
+          "result_number": 47
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "name_en": "The Army",
+      "binary": 2,
+      "all_lines_change": 61,
+      "all_lines_change_number": 13,
+      "nuclear": 1,
+      "reverse": 16,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 3,
+          "result_number": 19
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 0,
+          "result_number": 2
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 6,
+          "result_number": 46
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 10,
+          "result_number": 40
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 18,
+          "result_number": 29
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 34,
+          "result_number": 4
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "name_en": "Holding Together (Union)",
+      "binary": 16,
+      "all_lines_change": 47,
+      "all_lines_change_number": 14,
+      "nuclear": 32,
+      "reverse": 2,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 17,
+          "result_number": 3
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 18,
+          "result_number": 29
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 20,
+          "result_number": 39
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 24,
+          "result_number": 45
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 0,
+          "result_number": 2
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 48,
+          "result_number": 20
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "name_en": "Small Taming",
+      "binary": 55,
+      "all_lines_change": 8,
+      "all_lines_change_number": 16,
+      "nuclear": 43,
+      "reverse": 59,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 54,
+          "result_number": 57
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 53,
+          "result_number": 37
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 51,
+          "result_number": 61
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 63,
+          "result_number": 1
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 39,
+          "result_number": 26
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 23,
+          "result_number": 5
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "name_en": "Treading (Conduct)",
+      "binary": 59,
+      "all_lines_change": 4,
+      "all_lines_change_number": 15,
+      "nuclear": 53,
+      "reverse": 55,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 58,
+          "result_number": 6
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 57,
+          "result_number": 25
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 63,
+          "result_number": 1
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 51,
+          "result_number": 61
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 43,
+          "result_number": 38
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 27,
+          "result_number": 58
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "name_en": "Peace",
+      "binary": 7,
+      "all_lines_change": 56,
+      "all_lines_change_number": 12,
+      "nuclear": 11,
+      "reverse": 56,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 6,
+          "result_number": 46
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 5,
+          "result_number": 36
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 3,
+          "result_number": 19
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 15,
+          "result_number": 34
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 23,
+          "result_number": 5
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 39,
+          "result_number": 26
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "name_en": "Standstill (Stagnation)",
+      "binary": 56,
+      "all_lines_change": 7,
+      "all_lines_change_number": 11,
+      "nuclear": 52,
+      "reverse": 7,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 57,
+          "result_number": 25
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 58,
+          "result_number": 6
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 60,
+          "result_number": 33
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 48,
+          "result_number": 20
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 40,
+          "result_number": 35
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 24,
+          "result_number": 45
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "name_en": "Fellowship with Men",
+      "binary": 61,
+      "all_lines_change": 2,
+      "all_lines_change_number": 7,
+      "nuclear": 62,
+      "reverse": 47,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 60,
+          "result_number": 33
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 63,
+          "result_number": 1
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 57,
+          "result_number": 25
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 53,
+          "result_number": 37
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 45,
+          "result_number": 30
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 29,
+          "result_number": 49
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "name_en": "Possession in Great Measure",
+      "binary": 47,
+      "all_lines_change": 16,
+      "all_lines_change_number": 8,
+      "nuclear": 31,
+      "reverse": 61,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 46,
+          "result_number": 50
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 45,
+          "result_number": 30
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 43,
+          "result_number": 38
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 39,
+          "result_number": 26
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 63,
+          "result_number": 1
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 15,
+          "result_number": 34
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "name_en": "Modesty",
+      "binary": 4,
+      "all_lines_change": 59,
+      "all_lines_change_number": 10,
+      "nuclear": 10,
+      "reverse": 8,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 5,
+          "result_number": 36
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 6,
+          "result_number": 46
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 0,
+          "result_number": 2
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 12,
+          "result_number": 62
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 20,
+          "result_number": 39
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 36,
+          "result_number": 52
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "name_en": "Enthusiasm",
+      "binary": 8,
+      "all_lines_change": 55,
+      "all_lines_change_number": 9,
+      "nuclear": 20,
+      "reverse": 4,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 9,
+          "result_number": 51
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 10,
+          "result_number": 40
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 12,
+          "result_number": 62
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 0,
+          "result_number": 2
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 24,
+          "result_number": 45
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 40,
+          "result_number": 35
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "name_en": "Following",
+      "binary": 25,
+      "all_lines_change": 38,
+      "all_lines_change_number": 18,
+      "nuclear": 52,
+      "reverse": 38,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 24,
+          "result_number": 45
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 27,
+          "result_number": 58
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 29,
+          "result_number": 49
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 17,
+          "result_number": 3
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 9,
+          "result_number": 51
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 57,
+          "result_number": 25
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "name_en": "Work on What Has Been Spoiled",
+      "binary": 38,
+      "all_lines_change": 25,
+      "all_lines_change_number": 17,
+      "nuclear": 11,
+      "reverse": 25,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 39,
+          "result_number": 26
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 36,
+          "result_number": 52
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 34,
+          "result_number": 4
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 46,
+          "result_number": 50
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 54,
+          "result_number": 57
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 6,
+          "result_number": 46
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "name_en": "Approach",
+      "binary": 3,
+      "all_lines_change": 60,
+      "all_lines_change_number": 33,
+      "nuclear": 1,
+      "reverse": 48,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 2,
+          "result_number": 7
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 1,
+          "result_number": 24
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 7,
+          "result_number": 11
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 11,
+          "result_number": 54
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 19,
+          "result_number": 60
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 35,
+          "result_number": 41
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name_en": "Contemplation",
+      "binary": 48,
+      "all_lines_change": 15,
+      "all_lines_change_number": 34,
+      "nuclear": 32,
+      "reverse": 3,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 49,
+          "result_number": 42
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 50,
+          "result_number": 59
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 52,
+          "result_number": 53
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 56,
+          "result_number": 12
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 32,
+          "result_number": 23
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 16,
+          "result_number": 8
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "name_en": "Biting Through",
+      "binary": 41,
+      "all_lines_change": 22,
+      "all_lines_change_number": 48,
+      "nuclear": 20,
+      "reverse": 37,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 40,
+          "result_number": 35
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 43,
+          "result_number": 38
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 45,
+          "result_number": 30
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 33,
+          "result_number": 27
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 57,
+          "result_number": 25
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 9,
+          "result_number": 51
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "name_en": "Grace",
+      "binary": 37,
+      "all_lines_change": 26,
+      "all_lines_change_number": 47,
+      "nuclear": 10,
+      "reverse": 41,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 36,
+          "result_number": 52
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 39,
+          "result_number": 26
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 33,
+          "result_number": 27
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 45,
+          "result_number": 30
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 53,
+          "result_number": 37
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 5,
+          "result_number": 36
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "name_en": "Splitting Apart",
+      "binary": 32,
+      "all_lines_change": 31,
+      "all_lines_change_number": 43,
+      "nuclear": 0,
+      "reverse": 1,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 33,
+          "result_number": 27
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 34,
+          "result_number": 4
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 36,
+          "result_number": 52
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 40,
+          "result_number": 35
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 48,
+          "result_number": 20
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 0,
+          "result_number": 2
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "name_en": "Return (The Turning Point)",
+      "binary": 1,
+      "all_lines_change": 62,
+      "all_lines_change_number": 44,
+      "nuclear": 0,
+      "reverse": 32,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 0,
+          "result_number": 2
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 3,
+          "result_number": 19
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 5,
+          "result_number": 36
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 9,
+          "result_number": 51
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 17,
+          "result_number": 3
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 33,
+          "result_number": 27
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "name_en": "Innocence (The Unexpected)",
+      "binary": 57,
+      "all_lines_change": 6,
+      "all_lines_change_number": 46,
+      "nuclear": 52,
+      "reverse": 39,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 56,
+          "result_number": 12
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 59,
+          "result_number": 10
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 61,
+          "result_number": 13
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 49,
+          "result_number": 42
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 41,
+          "result_number": 21
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 25,
+          "result_number": 17
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "name_en": "The Taming Power of the Great",
+      "binary": 39,
+      "all_lines_change": 24,
+      "all_lines_change_number": 45,
+      "nuclear": 11,
+      "reverse": 57,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 38,
+          "result_number": 18
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 37,
+          "result_number": 22
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 35,
+          "result_number": 41
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 47,
+          "result_number": 14
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 55,
+          "result_number": 9
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 7,
+          "result_number": 11
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "name_en": "The Corners of the Mouth",
+      "binary": 33,
+      "all_lines_change": 30,
+      "all_lines_change_number": 28,
+      "nuclear": 0,
+      "reverse": 33,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 32,
+          "result_number": 23
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 35,
+          "result_number": 41
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 37,
+          "result_number": 22
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 41,
+          "result_number": 21
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 49,
+          "result_number": 42
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 1,
+          "result_number": 24
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "name_en": "Preponderance of the Great",
+      "binary": 30,
+      "all_lines_change": 33,
+      "all_lines_change_number": 27,
+      "nuclear": 63,
+      "reverse": 30,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 31,
+          "result_number": 43
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 28,
+          "result_number": 31
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 26,
+          "result_number": 47
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 22,
+          "result_number": 48
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 14,
+          "result_number": 32
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 62,
+          "result_number": 44
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "name_en": "The Abysmal (Water)",
+      "binary": 18,
+      "all_lines_change": 45,
+      "all_lines_change_number": 30,
+      "nuclear": 33,
+      "reverse": 18,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 19,
+          "result_number": 60
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 16,
+          "result_number": 8
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 22,
+          "result_number": 48
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 26,
+          "result_number": 47
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 2,
+          "result_number": 7
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 50,
+          "result_number": 59
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "name_en": "The Clinging (Fire)",
+      "binary": 45,
+      "all_lines_change": 18,
+      "all_lines_change_number": 29,
+      "nuclear": 30,
+      "reverse": 45,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 44,
+          "result_number": 56
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 47,
+          "result_number": 14
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 41,
+          "result_number": 21
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 37,
+          "result_number": 22
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 61,
+          "result_number": 13
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 13,
+          "result_number": 55
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "name_en": "Influence (Wooing)",
+      "binary": 28,
+      "all_lines_change": 35,
+      "all_lines_change_number": 41,
+      "nuclear": 62,
+      "reverse": 14,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 29,
+          "result_number": 49
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 30,
+          "result_number": 28
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 24,
+          "result_number": 45
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 20,
+          "result_number": 39
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 12,
+          "result_number": 62
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 60,
+          "result_number": 33
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "name_en": "Duration",
+      "binary": 14,
+      "all_lines_change": 49,
+      "all_lines_change_number": 42,
+      "nuclear": 31,
+      "reverse": 28,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 15,
+          "result_number": 34
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 12,
+          "result_number": 62
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 10,
+          "result_number": 40
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 6,
+          "result_number": 46
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 30,
+          "result_number": 28
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 46,
+          "result_number": 50
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "name_en": "Retreat",
+      "binary": 60,
+      "all_lines_change": 3,
+      "all_lines_change_number": 19,
+      "nuclear": 62,
+      "reverse": 15,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 61,
+          "result_number": 13
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 62,
+          "result_number": 44
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 56,
+          "result_number": 12
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 52,
+          "result_number": 53
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 44,
+          "result_number": 56
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 28,
+          "result_number": 31
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "name_en": "The Power of the Great",
+      "binary": 15,
+      "all_lines_change": 48,
+      "all_lines_change_number": 20,
+      "nuclear": 31,
+      "reverse": 60,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 14,
+          "result_number": 32
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 13,
+          "result_number": 55
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 11,
+          "result_number": 54
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 7,
+          "result_number": 11
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 31,
+          "result_number": 43
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 47,
+          "result_number": 14
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "name_en": "Progress",
+      "binary": 40,
+      "all_lines_change": 23,
+      "all_lines_change_number": 5,
+      "nuclear": 20,
+      "reverse": 5,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 41,
+          "result_number": 21
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 42,
+          "result_number": 64
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 44,
+          "result_number": 56
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 32,
+          "result_number": 23
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 56,
+          "result_number": 12
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 8,
+          "result_number": 16
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "name_en": "Darkening of the Light",
+      "binary": 5,
+      "all_lines_change": 58,
+      "all_lines_change_number": 6,
+      "nuclear": 10,
+      "reverse": 40,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 4,
+          "result_number": 15
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 7,
+          "result_number": 11
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 1,
+          "result_number": 24
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 13,
+          "result_number": 55
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 21,
+          "result_number": 63
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 37,
+          "result_number": 22
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "name_en": "The Family",
+      "binary": 53,
+      "all_lines_change": 10,
+      "all_lines_change_number": 40,
+      "nuclear": 42,
+      "reverse": 43,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 52,
+          "result_number": 53
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 55,
+          "result_number": 9
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 49,
+          "result_number": 42
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 61,
+          "result_number": 13
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 37,
+          "result_number": 22
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 21,
+          "result_number": 63
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "name_en": "Opposition",
+      "binary": 43,
+      "all_lines_change": 20,
+      "all_lines_change_number": 39,
+      "nuclear": 21,
+      "reverse": 53,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 42,
+          "result_number": 64
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 41,
+          "result_number": 21
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 47,
+          "result_number": 14
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 35,
+          "result_number": 41
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 59,
+          "result_number": 10
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 11,
+          "result_number": 54
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "name_en": "Obstruction",
+      "binary": 20,
+      "all_lines_change": 43,
+      "all_lines_change_number": 38,
+      "nuclear": 42,
+      "reverse": 10,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 21,
+          "result_number": 63
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 22,
+          "result_number": 48
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 16,
+          "result_number": 8
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 28,
+          "result_number": 31
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 4,
+          "result_number": 15
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 52,
+          "result_number": 53
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "name_en": "Deliverance",
+      "binary": 10,
+      "all_lines_change": 53,
+      "all_lines_change_number": 37,
+      "nuclear": 21,
+      "reverse": 20,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 11,
+          "result_number": 54
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 8,
+          "result_number": 16
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 14,
+          "result_number": 32
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 2,
+          "result_number": 7
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 26,
+          "result_number": 47
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 42,
+          "result_number": 64
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "name_en": "Decrease",
+      "binary": 35,
+      "all_lines_change": 28,
+      "all_lines_change_number": 31,
+      "nuclear": 1,
+      "reverse": 49,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 34,
+          "result_number": 4
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 33,
+          "result_number": 27
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 39,
+          "result_number": 26
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 43,
+          "result_number": 38
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 51,
+          "result_number": 61
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 3,
+          "result_number": 19
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "name_en": "Increase",
+      "binary": 49,
+      "all_lines_change": 14,
+      "all_lines_change_number": 32,
+      "nuclear": 32,
+      "reverse": 35,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 48,
+          "result_number": 20
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 51,
+          "result_number": 61
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 53,
+          "result_number": 37
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 57,
+          "result_number": 25
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 33,
+          "result_number": 27
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 17,
+          "result_number": 3
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "name_en": "Breakthrough (Resoluteness)",
+      "binary": 31,
+      "all_lines_change": 32,
+      "all_lines_change_number": 23,
+      "nuclear": 63,
+      "reverse": 62,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 30,
+          "result_number": 28
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 29,
+          "result_number": 49
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 27,
+          "result_number": 58
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 23,
+          "result_number": 5
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 15,
+          "result_number": 34
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 63,
+          "result_number": 1
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "name_en": "Coming to Meet",
+      "binary": 62,
+      "all_lines_change": 1,
+      "all_lines_change_number": 24,
+      "nuclear": 63,
+      "reverse": 31,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 63,
+          "result_number": 1
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 60,
+          "result_number": 33
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 58,
+          "result_number": 6
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 54,
+          "result_number": 57
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 46,
+          "result_number": 50
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 30,
+          "result_number": 28
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "name_en": "Gathering Together",
+      "binary": 24,
+      "all_lines_change": 39,
+      "all_lines_change_number": 26,
+      "nuclear": 52,
+      "reverse": 6,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 25,
+          "result_number": 17
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 26,
+          "result_number": 47
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 28,
+          "result_number": 31
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 16,
+          "result_number": 8
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 8,
+          "result_number": 16
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 56,
+          "result_number": 12
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "name_en": "Pushing Upward",
+      "binary": 6,
+      "all_lines_change": 57,
+      "all_lines_change_number": 25,
+      "nuclear": 11,
+      "reverse": 24,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 7,
+          "result_number": 11
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 4,
+          "result_number": 15
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 2,
+          "result_number": 7
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 14,
+          "result_number": 32
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 22,
+          "result_number": 48
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 38,
+          "result_number": 18
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "name_en": "Oppression (Exhaustion)",
+      "binary": 26,
+      "all_lines_change": 37,
+      "all_lines_change_number": 22,
+      "nuclear": 53,
+      "reverse": 22,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 27,
+          "result_number": 58
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 24,
+          "result_number": 45
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 30,
+          "result_number": 28
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 18,
+          "result_number": 29
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 10,
+          "result_number": 40
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 58,
+          "result_number": 6
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "name_en": "The Well",
+      "binary": 22,
+      "all_lines_change": 41,
+      "all_lines_change_number": 21,
+      "nuclear": 43,
+      "reverse": 26,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 23,
+          "result_number": 5
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 20,
+          "result_number": 39
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 18,
+          "result_number": 29
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 30,
+          "result_number": 28
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 6,
+          "result_number": 46
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 54,
+          "result_number": 57
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "name_en": "Revolution (Molting)",
+      "binary": 29,
+      "all_lines_change": 34,
+      "all_lines_change_number": 4,
+      "nuclear": 62,
+      "reverse": 46,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 28,
+          "result_number": 31
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 31,
+          "result_number": 43
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 25,
+          "result_number": 17
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 21,
+          "result_number": 63
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 13,
+          "result_number": 55
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 61,
+          "result_number": 13
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "name_en": "The Cauldron",
+      "binary": 46,
+      "all_lines_change": 17,
+      "all_lines_change_number": 3,
+      "nuclear": 31,
+      "reverse": 29,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 47,
+          "result_number": 14
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 44,
+          "result_number": 56
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 42,
+          "result_number": 64
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 38,
+          "result_number": 18
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 62,
+          "result_number": 44
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 14,
+          "result_number": 32
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "name_en": "The Arousing (Shock, Thunder)",
+      "binary": 9,
+      "all_lines_change": 54,
+      "all_lines_change_number": 57,
+      "nuclear": 20,
+      "reverse": 36,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 8,
+          "result_number": 16
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 11,
+          "result_number": 54
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 13,
+          "result_number": 55
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 1,
+          "result_number": 24
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 25,
+          "result_number": 17
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 41,
+          "result_number": 21
+        }
+      ]
+    },
+    {
+      "number": 52,
+      "name_en": "Keeping Still (Mountain)",
+      "binary": 36,
+      "all_lines_change": 27,
+      "all_lines_change_number": 58,
+      "nuclear": 10,
+      "reverse": 9,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 37,
+          "result_number": 22
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 38,
+          "result_number": 18
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 32,
+          "result_number": 23
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 44,
+          "result_number": 56
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 52,
+          "result_number": 53
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 4,
+          "result_number": 15
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "name_en": "Development (Gradual Progress)",
+      "binary": 52,
+      "all_lines_change": 11,
+      "all_lines_change_number": 54,
+      "nuclear": 42,
+      "reverse": 11,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 53,
+          "result_number": 37
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 54,
+          "result_number": 57
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 48,
+          "result_number": 20
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 60,
+          "result_number": 33
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 36,
+          "result_number": 52
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 20,
+          "result_number": 39
+        }
+      ]
+    },
+    {
+      "number": 54,
+      "name_en": "The Marrying Maiden",
+      "binary": 11,
+      "all_lines_change": 52,
+      "all_lines_change_number": 53,
+      "nuclear": 21,
+      "reverse": 52,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 10,
+          "result_number": 40
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 9,
+          "result_number": 51
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 15,
+          "result_number": 34
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 3,
+          "result_number": 19
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 27,
+          "result_number": 58
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 43,
+          "result_number": 38
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "name_en": "Abundance (Fullness)",
+      "binary": 13,
+      "all_lines_change": 50,
+      "all_lines_change_number": 59,
+      "nuclear": 30,
+      "reverse": 44,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 12,
+          "result_number": 62
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 15,
+          "result_number": 34
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 9,
+          "result_number": 51
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 5,
+          "result_number": 36
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 29,
+          "result_number": 49
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 45,
+          "result_number": 30
+        }
+      ]
+    },
+    {
+      "number": 56,
+      "name_en": "The Wanderer",
+      "binary": 44,
+      "all_lines_change": 19,
+      "all_lines_change_number": 60,
+      "nuclear": 30,
+      "reverse": 13,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 45,
+          "result_number": 30
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 46,
+          "result_number": 50
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 40,
+          "result_number": 35
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 36,
+          "result_number": 52
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 60,
+          "result_number": 33
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 12,
+          "result_number": 62
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "name_en": "The Gentle (Wind, Wood)",
+      "binary": 54,
+      "all_lines_change": 9,
+      "all_lines_change_number": 51,
+      "nuclear": 43,
+      "reverse": 27,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 55,
+          "result_number": 9
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 52,
+          "result_number": 53
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 50,
+          "result_number": 59
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 62,
+          "result_number": 44
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 38,
+          "result_number": 18
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 22,
+          "result_number": 48
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "name_en": "The Joyous (Lake)",
+      "binary": 27,
+      "all_lines_change": 36,
+      "all_lines_change_number": 52,
+      "nuclear": 53,
+      "reverse": 54,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 26,
+          "result_number": 47
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 25,
+          "result_number": 17
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 31,
+          "result_number": 43
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 19,
+          "result_number": 60
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 11,
+          "result_number": 54
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 59,
+          "result_number": 10
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "name_en": "Dispersion (Dissolution)",
+      "binary": 50,
+      "all_lines_change": 13,
+      "all_lines_change_number": 55,
+      "nuclear": 33,
+      "reverse": 19,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 51,
+          "result_number": 61
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 48,
+          "result_number": 20
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 54,
+          "result_number": 57
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 58,
+          "result_number": 6
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 34,
+          "result_number": 4
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 18,
+          "result_number": 29
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "name_en": "Limitation",
+      "binary": 19,
+      "all_lines_change": 44,
+      "all_lines_change_number": 56,
+      "nuclear": 33,
+      "reverse": 50,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 18,
+          "result_number": 29
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 17,
+          "result_number": 3
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 23,
+          "result_number": 5
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 27,
+          "result_number": 58
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 3,
+          "result_number": 19
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 51,
+          "result_number": 61
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "name_en": "Inner Truth",
+      "binary": 51,
+      "all_lines_change": 12,
+      "all_lines_change_number": 62,
+      "nuclear": 33,
+      "reverse": 51,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 50,
+          "result_number": 59
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 49,
+          "result_number": 42
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 55,
+          "result_number": 9
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 59,
+          "result_number": 10
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 35,
+          "result_number": 41
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 19,
+          "result_number": 60
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "name_en": "Preponderance of the Small",
+      "binary": 12,
+      "all_lines_change": 51,
+      "all_lines_change_number": 61,
+      "nuclear": 30,
+      "reverse": 12,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 13,
+          "result_number": 55
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 14,
+          "result_number": 32
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 8,
+          "result_number": 16
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 4,
+          "result_number": 15
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 28,
+          "result_number": 31
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 44,
+          "result_number": 56
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "name_en": "After Completion",
+      "binary": 21,
+      "all_lines_change": 42,
+      "all_lines_change_number": 64,
+      "nuclear": 42,
+      "reverse": 42,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 1,
+          "result_binary": 20,
+          "result_number": 39
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 0,
+          "result_binary": 23,
+          "result_number": 5
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 1,
+          "result_binary": 17,
+          "result_number": 3
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 0,
+          "result_binary": 29,
+          "result_number": 49
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 1,
+          "result_binary": 5,
+          "result_number": 36
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 0,
+          "result_binary": 53,
+          "result_number": 37
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "name_en": "Before Completion",
+      "binary": 42,
+      "all_lines_change": 21,
+      "all_lines_change_number": 63,
+      "nuclear": 21,
+      "reverse": 21,
+      "single_line_changes": [
+        {
+          "changing_line": 1,
+          "original_bit": 0,
+          "result_binary": 43,
+          "result_number": 38
+        },
+        {
+          "changing_line": 2,
+          "original_bit": 1,
+          "result_binary": 40,
+          "result_number": 35
+        },
+        {
+          "changing_line": 3,
+          "original_bit": 0,
+          "result_binary": 46,
+          "result_number": 50
+        },
+        {
+          "changing_line": 4,
+          "original_bit": 1,
+          "result_binary": 34,
+          "result_number": 4
+        },
+        {
+          "changing_line": 5,
+          "original_bit": 0,
+          "result_binary": 58,
+          "result_number": 6
+        },
+        {
+          "changing_line": 6,
+          "original_bit": 1,
+          "result_binary": 10,
+          "result_number": 40
+        }
+      ]
+    }
+  ]
+}

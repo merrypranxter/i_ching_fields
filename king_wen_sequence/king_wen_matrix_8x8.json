@@ -1,0 +1,889 @@
+{
+  "description": "The 64 hexagrams arranged in their traditional 8×8 King Wen matrix. Row 0 is the top row (hexagrams 1-8), Row 7 is the bottom row (hexagrams 57-64). Each entry includes the hexagram number, binary value, and name.",
+  "encoding_note": "binary: 6-bit, bit0=bottom line, upper_trigram=bits3-5, lower_trigram=bits0-2.",
+  "matrix": [
+    [
+      {
+        "number": 1,
+        "binary": 63,
+        "binary_string": "111111",
+        "name_en": "The Creative",
+        "name_zh": "乾",
+        "row": 0,
+        "col": 0
+      },
+      {
+        "number": 2,
+        "binary": 0,
+        "binary_string": "000000",
+        "name_en": "The Receptive",
+        "name_zh": "坤",
+        "row": 0,
+        "col": 1
+      },
+      {
+        "number": 3,
+        "binary": 17,
+        "binary_string": "010001",
+        "name_en": "Difficulty at the Beginning",
+        "name_zh": "屯",
+        "row": 0,
+        "col": 2
+      },
+      {
+        "number": 4,
+        "binary": 34,
+        "binary_string": "100010",
+        "name_en": "Youthful Folly",
+        "name_zh": "蒙",
+        "row": 0,
+        "col": 3
+      },
+      {
+        "number": 5,
+        "binary": 23,
+        "binary_string": "010111",
+        "name_en": "Waiting (Nourishment)",
+        "name_zh": "需",
+        "row": 0,
+        "col": 4
+      },
+      {
+        "number": 6,
+        "binary": 58,
+        "binary_string": "111010",
+        "name_en": "Conflict",
+        "name_zh": "訟",
+        "row": 0,
+        "col": 5
+      },
+      {
+        "number": 7,
+        "binary": 2,
+        "binary_string": "000010",
+        "name_en": "The Army",
+        "name_zh": "師",
+        "row": 0,
+        "col": 6
+      },
+      {
+        "number": 8,
+        "binary": 16,
+        "binary_string": "010000",
+        "name_en": "Holding Together (Union)",
+        "name_zh": "比",
+        "row": 0,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 9,
+        "binary": 55,
+        "binary_string": "110111",
+        "name_en": "Small Taming",
+        "name_zh": "小畜",
+        "row": 1,
+        "col": 0
+      },
+      {
+        "number": 10,
+        "binary": 59,
+        "binary_string": "111011",
+        "name_en": "Treading (Conduct)",
+        "name_zh": "履",
+        "row": 1,
+        "col": 1
+      },
+      {
+        "number": 11,
+        "binary": 7,
+        "binary_string": "000111",
+        "name_en": "Peace",
+        "name_zh": "泰",
+        "row": 1,
+        "col": 2
+      },
+      {
+        "number": 12,
+        "binary": 56,
+        "binary_string": "111000",
+        "name_en": "Standstill (Stagnation)",
+        "name_zh": "否",
+        "row": 1,
+        "col": 3
+      },
+      {
+        "number": 13,
+        "binary": 61,
+        "binary_string": "111101",
+        "name_en": "Fellowship with Men",
+        "name_zh": "同人",
+        "row": 1,
+        "col": 4
+      },
+      {
+        "number": 14,
+        "binary": 47,
+        "binary_string": "101111",
+        "name_en": "Possession in Great Measure",
+        "name_zh": "大有",
+        "row": 1,
+        "col": 5
+      },
+      {
+        "number": 15,
+        "binary": 4,
+        "binary_string": "000100",
+        "name_en": "Modesty",
+        "name_zh": "謙",
+        "row": 1,
+        "col": 6
+      },
+      {
+        "number": 16,
+        "binary": 8,
+        "binary_string": "001000",
+        "name_en": "Enthusiasm",
+        "name_zh": "豫",
+        "row": 1,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 17,
+        "binary": 25,
+        "binary_string": "011001",
+        "name_en": "Following",
+        "name_zh": "隨",
+        "row": 2,
+        "col": 0
+      },
+      {
+        "number": 18,
+        "binary": 38,
+        "binary_string": "100110",
+        "name_en": "Work on What Has Been Spoiled",
+        "name_zh": "蠱",
+        "row": 2,
+        "col": 1
+      },
+      {
+        "number": 19,
+        "binary": 3,
+        "binary_string": "000011",
+        "name_en": "Approach",
+        "name_zh": "臨",
+        "row": 2,
+        "col": 2
+      },
+      {
+        "number": 20,
+        "binary": 48,
+        "binary_string": "110000",
+        "name_en": "Contemplation",
+        "name_zh": "觀",
+        "row": 2,
+        "col": 3
+      },
+      {
+        "number": 21,
+        "binary": 41,
+        "binary_string": "101001",
+        "name_en": "Biting Through",
+        "name_zh": "噬嗑",
+        "row": 2,
+        "col": 4
+      },
+      {
+        "number": 22,
+        "binary": 37,
+        "binary_string": "100101",
+        "name_en": "Grace",
+        "name_zh": "賁",
+        "row": 2,
+        "col": 5
+      },
+      {
+        "number": 23,
+        "binary": 32,
+        "binary_string": "100000",
+        "name_en": "Splitting Apart",
+        "name_zh": "剝",
+        "row": 2,
+        "col": 6
+      },
+      {
+        "number": 24,
+        "binary": 1,
+        "binary_string": "000001",
+        "name_en": "Return (The Turning Point)",
+        "name_zh": "復",
+        "row": 2,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 25,
+        "binary": 57,
+        "binary_string": "111001",
+        "name_en": "Innocence (The Unexpected)",
+        "name_zh": "無妄",
+        "row": 3,
+        "col": 0
+      },
+      {
+        "number": 26,
+        "binary": 39,
+        "binary_string": "100111",
+        "name_en": "The Taming Power of the Great",
+        "name_zh": "大畜",
+        "row": 3,
+        "col": 1
+      },
+      {
+        "number": 27,
+        "binary": 33,
+        "binary_string": "100001",
+        "name_en": "The Corners of the Mouth",
+        "name_zh": "頤",
+        "row": 3,
+        "col": 2
+      },
+      {
+        "number": 28,
+        "binary": 30,
+        "binary_string": "011110",
+        "name_en": "Preponderance of the Great",
+        "name_zh": "大過",
+        "row": 3,
+        "col": 3
+      },
+      {
+        "number": 29,
+        "binary": 18,
+        "binary_string": "010010",
+        "name_en": "The Abysmal (Water)",
+        "name_zh": "坎",
+        "row": 3,
+        "col": 4
+      },
+      {
+        "number": 30,
+        "binary": 45,
+        "binary_string": "101101",
+        "name_en": "The Clinging (Fire)",
+        "name_zh": "離",
+        "row": 3,
+        "col": 5
+      },
+      {
+        "number": 31,
+        "binary": 28,
+        "binary_string": "011100",
+        "name_en": "Influence (Wooing)",
+        "name_zh": "咸",
+        "row": 3,
+        "col": 6
+      },
+      {
+        "number": 32,
+        "binary": 14,
+        "binary_string": "001110",
+        "name_en": "Duration",
+        "name_zh": "恆",
+        "row": 3,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 33,
+        "binary": 60,
+        "binary_string": "111100",
+        "name_en": "Retreat",
+        "name_zh": "遯",
+        "row": 4,
+        "col": 0
+      },
+      {
+        "number": 34,
+        "binary": 15,
+        "binary_string": "001111",
+        "name_en": "The Power of the Great",
+        "name_zh": "大壯",
+        "row": 4,
+        "col": 1
+      },
+      {
+        "number": 35,
+        "binary": 40,
+        "binary_string": "101000",
+        "name_en": "Progress",
+        "name_zh": "晉",
+        "row": 4,
+        "col": 2
+      },
+      {
+        "number": 36,
+        "binary": 5,
+        "binary_string": "000101",
+        "name_en": "Darkening of the Light",
+        "name_zh": "明夷",
+        "row": 4,
+        "col": 3
+      },
+      {
+        "number": 37,
+        "binary": 53,
+        "binary_string": "110101",
+        "name_en": "The Family",
+        "name_zh": "家人",
+        "row": 4,
+        "col": 4
+      },
+      {
+        "number": 38,
+        "binary": 43,
+        "binary_string": "101011",
+        "name_en": "Opposition",
+        "name_zh": "睽",
+        "row": 4,
+        "col": 5
+      },
+      {
+        "number": 39,
+        "binary": 20,
+        "binary_string": "010100",
+        "name_en": "Obstruction",
+        "name_zh": "蹇",
+        "row": 4,
+        "col": 6
+      },
+      {
+        "number": 40,
+        "binary": 10,
+        "binary_string": "001010",
+        "name_en": "Deliverance",
+        "name_zh": "解",
+        "row": 4,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 41,
+        "binary": 35,
+        "binary_string": "100011",
+        "name_en": "Decrease",
+        "name_zh": "損",
+        "row": 5,
+        "col": 0
+      },
+      {
+        "number": 42,
+        "binary": 49,
+        "binary_string": "110001",
+        "name_en": "Increase",
+        "name_zh": "益",
+        "row": 5,
+        "col": 1
+      },
+      {
+        "number": 43,
+        "binary": 31,
+        "binary_string": "011111",
+        "name_en": "Breakthrough (Resoluteness)",
+        "name_zh": "夬",
+        "row": 5,
+        "col": 2
+      },
+      {
+        "number": 44,
+        "binary": 62,
+        "binary_string": "111110",
+        "name_en": "Coming to Meet",
+        "name_zh": "姤",
+        "row": 5,
+        "col": 3
+      },
+      {
+        "number": 45,
+        "binary": 24,
+        "binary_string": "011000",
+        "name_en": "Gathering Together",
+        "name_zh": "萃",
+        "row": 5,
+        "col": 4
+      },
+      {
+        "number": 46,
+        "binary": 6,
+        "binary_string": "000110",
+        "name_en": "Pushing Upward",
+        "name_zh": "升",
+        "row": 5,
+        "col": 5
+      },
+      {
+        "number": 47,
+        "binary": 26,
+        "binary_string": "011010",
+        "name_en": "Oppression (Exhaustion)",
+        "name_zh": "困",
+        "row": 5,
+        "col": 6
+      },
+      {
+        "number": 48,
+        "binary": 22,
+        "binary_string": "010110",
+        "name_en": "The Well",
+        "name_zh": "井",
+        "row": 5,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 49,
+        "binary": 29,
+        "binary_string": "011101",
+        "name_en": "Revolution (Molting)",
+        "name_zh": "革",
+        "row": 6,
+        "col": 0
+      },
+      {
+        "number": 50,
+        "binary": 46,
+        "binary_string": "101110",
+        "name_en": "The Cauldron",
+        "name_zh": "鼎",
+        "row": 6,
+        "col": 1
+      },
+      {
+        "number": 51,
+        "binary": 9,
+        "binary_string": "001001",
+        "name_en": "The Arousing (Shock, Thunder)",
+        "name_zh": "震",
+        "row": 6,
+        "col": 2
+      },
+      {
+        "number": 52,
+        "binary": 36,
+        "binary_string": "100100",
+        "name_en": "Keeping Still (Mountain)",
+        "name_zh": "艮",
+        "row": 6,
+        "col": 3
+      },
+      {
+        "number": 53,
+        "binary": 52,
+        "binary_string": "110100",
+        "name_en": "Development (Gradual Progress)",
+        "name_zh": "漸",
+        "row": 6,
+        "col": 4
+      },
+      {
+        "number": 54,
+        "binary": 11,
+        "binary_string": "001011",
+        "name_en": "The Marrying Maiden",
+        "name_zh": "歸妹",
+        "row": 6,
+        "col": 5
+      },
+      {
+        "number": 55,
+        "binary": 13,
+        "binary_string": "001101",
+        "name_en": "Abundance (Fullness)",
+        "name_zh": "豐",
+        "row": 6,
+        "col": 6
+      },
+      {
+        "number": 56,
+        "binary": 44,
+        "binary_string": "101100",
+        "name_en": "The Wanderer",
+        "name_zh": "旅",
+        "row": 6,
+        "col": 7
+      }
+    ],
+    [
+      {
+        "number": 57,
+        "binary": 54,
+        "binary_string": "110110",
+        "name_en": "The Gentle (Wind, Wood)",
+        "name_zh": "巽",
+        "row": 7,
+        "col": 0
+      },
+      {
+        "number": 58,
+        "binary": 27,
+        "binary_string": "011011",
+        "name_en": "The Joyous (Lake)",
+        "name_zh": "兌",
+        "row": 7,
+        "col": 1
+      },
+      {
+        "number": 59,
+        "binary": 50,
+        "binary_string": "110010",
+        "name_en": "Dispersion (Dissolution)",
+        "name_zh": "渙",
+        "row": 7,
+        "col": 2
+      },
+      {
+        "number": 60,
+        "binary": 19,
+        "binary_string": "010011",
+        "name_en": "Limitation",
+        "name_zh": "節",
+        "row": 7,
+        "col": 3
+      },
+      {
+        "number": 61,
+        "binary": 51,
+        "binary_string": "110011",
+        "name_en": "Inner Truth",
+        "name_zh": "中孚",
+        "row": 7,
+        "col": 4
+      },
+      {
+        "number": 62,
+        "binary": 12,
+        "binary_string": "001100",
+        "name_en": "Preponderance of the Small",
+        "name_zh": "小過",
+        "row": 7,
+        "col": 5
+      },
+      {
+        "number": 63,
+        "binary": 21,
+        "binary_string": "010101",
+        "name_en": "After Completion",
+        "name_zh": "既濟",
+        "row": 7,
+        "col": 6
+      },
+      {
+        "number": 64,
+        "binary": 42,
+        "binary_string": "101010",
+        "name_en": "Before Completion",
+        "name_zh": "未濟",
+        "row": 7,
+        "col": 7
+      }
+    ]
+  ],
+  "adjacency_pairs": [
+    {
+      "hex_a": 1,
+      "hex_b": 2,
+      "hex_a_binary": 63,
+      "hex_b_binary": 0,
+      "relationship": "complement",
+      "name_a": "The Creative",
+      "name_b": "The Receptive"
+    },
+    {
+      "hex_a": 3,
+      "hex_b": 4,
+      "hex_a_binary": 17,
+      "hex_b_binary": 34,
+      "relationship": "reverse",
+      "name_a": "Difficulty at the Beginning",
+      "name_b": "Youthful Folly"
+    },
+    {
+      "hex_a": 5,
+      "hex_b": 6,
+      "hex_a_binary": 23,
+      "hex_b_binary": 58,
+      "relationship": "reverse",
+      "name_a": "Waiting (Nourishment)",
+      "name_b": "Conflict"
+    },
+    {
+      "hex_a": 7,
+      "hex_b": 8,
+      "hex_a_binary": 2,
+      "hex_b_binary": 16,
+      "relationship": "reverse",
+      "name_a": "The Army",
+      "name_b": "Holding Together (Union)"
+    },
+    {
+      "hex_a": 9,
+      "hex_b": 10,
+      "hex_a_binary": 55,
+      "hex_b_binary": 59,
+      "relationship": "reverse",
+      "name_a": "Small Taming",
+      "name_b": "Treading (Conduct)"
+    },
+    {
+      "hex_a": 11,
+      "hex_b": 12,
+      "hex_a_binary": 7,
+      "hex_b_binary": 56,
+      "relationship": "reverse",
+      "name_a": "Peace",
+      "name_b": "Standstill (Stagnation)"
+    },
+    {
+      "hex_a": 13,
+      "hex_b": 14,
+      "hex_a_binary": 61,
+      "hex_b_binary": 47,
+      "relationship": "reverse",
+      "name_a": "Fellowship with Men",
+      "name_b": "Possession in Great Measure"
+    },
+    {
+      "hex_a": 15,
+      "hex_b": 16,
+      "hex_a_binary": 4,
+      "hex_b_binary": 8,
+      "relationship": "reverse",
+      "name_a": "Modesty",
+      "name_b": "Enthusiasm"
+    },
+    {
+      "hex_a": 17,
+      "hex_b": 18,
+      "hex_a_binary": 25,
+      "hex_b_binary": 38,
+      "relationship": "reverse",
+      "name_a": "Following",
+      "name_b": "Work on What Has Been Spoiled"
+    },
+    {
+      "hex_a": 19,
+      "hex_b": 20,
+      "hex_a_binary": 3,
+      "hex_b_binary": 48,
+      "relationship": "reverse",
+      "name_a": "Approach",
+      "name_b": "Contemplation"
+    },
+    {
+      "hex_a": 21,
+      "hex_b": 22,
+      "hex_a_binary": 41,
+      "hex_b_binary": 37,
+      "relationship": "reverse",
+      "name_a": "Biting Through",
+      "name_b": "Grace"
+    },
+    {
+      "hex_a": 23,
+      "hex_b": 24,
+      "hex_a_binary": 32,
+      "hex_b_binary": 1,
+      "relationship": "reverse",
+      "name_a": "Splitting Apart",
+      "name_b": "Return (The Turning Point)"
+    },
+    {
+      "hex_a": 25,
+      "hex_b": 26,
+      "hex_a_binary": 57,
+      "hex_b_binary": 39,
+      "relationship": "reverse",
+      "name_a": "Innocence (The Unexpected)",
+      "name_b": "The Taming Power of the Great"
+    },
+    {
+      "hex_a": 27,
+      "hex_b": 28,
+      "hex_a_binary": 33,
+      "hex_b_binary": 30,
+      "relationship": "complement",
+      "name_a": "The Corners of the Mouth",
+      "name_b": "Preponderance of the Great"
+    },
+    {
+      "hex_a": 29,
+      "hex_b": 30,
+      "hex_a_binary": 18,
+      "hex_b_binary": 45,
+      "relationship": "complement",
+      "name_a": "The Abysmal (Water)",
+      "name_b": "The Clinging (Fire)"
+    },
+    {
+      "hex_a": 31,
+      "hex_b": 32,
+      "hex_a_binary": 28,
+      "hex_b_binary": 14,
+      "relationship": "reverse",
+      "name_a": "Influence (Wooing)",
+      "name_b": "Duration"
+    },
+    {
+      "hex_a": 33,
+      "hex_b": 34,
+      "hex_a_binary": 60,
+      "hex_b_binary": 15,
+      "relationship": "reverse",
+      "name_a": "Retreat",
+      "name_b": "The Power of the Great"
+    },
+    {
+      "hex_a": 35,
+      "hex_b": 36,
+      "hex_a_binary": 40,
+      "hex_b_binary": 5,
+      "relationship": "reverse",
+      "name_a": "Progress",
+      "name_b": "Darkening of the Light"
+    },
+    {
+      "hex_a": 37,
+      "hex_b": 38,
+      "hex_a_binary": 53,
+      "hex_b_binary": 43,
+      "relationship": "reverse",
+      "name_a": "The Family",
+      "name_b": "Opposition"
+    },
+    {
+      "hex_a": 39,
+      "hex_b": 40,
+      "hex_a_binary": 20,
+      "hex_b_binary": 10,
+      "relationship": "reverse",
+      "name_a": "Obstruction",
+      "name_b": "Deliverance"
+    },
+    {
+      "hex_a": 41,
+      "hex_b": 42,
+      "hex_a_binary": 35,
+      "hex_b_binary": 49,
+      "relationship": "reverse",
+      "name_a": "Decrease",
+      "name_b": "Increase"
+    },
+    {
+      "hex_a": 43,
+      "hex_b": 44,
+      "hex_a_binary": 31,
+      "hex_b_binary": 62,
+      "relationship": "reverse",
+      "name_a": "Breakthrough (Resoluteness)",
+      "name_b": "Coming to Meet"
+    },
+    {
+      "hex_a": 45,
+      "hex_b": 46,
+      "hex_a_binary": 24,
+      "hex_b_binary": 6,
+      "relationship": "reverse",
+      "name_a": "Gathering Together",
+      "name_b": "Pushing Upward"
+    },
+    {
+      "hex_a": 47,
+      "hex_b": 48,
+      "hex_a_binary": 26,
+      "hex_b_binary": 22,
+      "relationship": "reverse",
+      "name_a": "Oppression (Exhaustion)",
+      "name_b": "The Well"
+    },
+    {
+      "hex_a": 49,
+      "hex_b": 50,
+      "hex_a_binary": 29,
+      "hex_b_binary": 46,
+      "relationship": "reverse",
+      "name_a": "Revolution (Molting)",
+      "name_b": "The Cauldron"
+    },
+    {
+      "hex_a": 51,
+      "hex_b": 52,
+      "hex_a_binary": 9,
+      "hex_b_binary": 36,
+      "relationship": "reverse",
+      "name_a": "The Arousing (Shock, Thunder)",
+      "name_b": "Keeping Still (Mountain)"
+    },
+    {
+      "hex_a": 53,
+      "hex_b": 54,
+      "hex_a_binary": 52,
+      "hex_b_binary": 11,
+      "relationship": "reverse",
+      "name_a": "Development (Gradual Progress)",
+      "name_b": "The Marrying Maiden"
+    },
+    {
+      "hex_a": 55,
+      "hex_b": 56,
+      "hex_a_binary": 13,
+      "hex_b_binary": 44,
+      "relationship": "reverse",
+      "name_a": "Abundance (Fullness)",
+      "name_b": "The Wanderer"
+    },
+    {
+      "hex_a": 57,
+      "hex_b": 58,
+      "hex_a_binary": 54,
+      "hex_b_binary": 27,
+      "relationship": "reverse",
+      "name_a": "The Gentle (Wind, Wood)",
+      "name_b": "The Joyous (Lake)"
+    },
+    {
+      "hex_a": 59,
+      "hex_b": 60,
+      "hex_a_binary": 50,
+      "hex_b_binary": 19,
+      "relationship": "reverse",
+      "name_a": "Dispersion (Dissolution)",
+      "name_b": "Limitation"
+    },
+    {
+      "hex_a": 61,
+      "hex_b": 62,
+      "hex_a_binary": 51,
+      "hex_b_binary": 12,
+      "relationship": "complement",
+      "name_a": "Inner Truth",
+      "name_b": "Preponderance of the Small"
+    },
+    {
+      "hex_a": 63,
+      "hex_b": 64,
+      "hex_a_binary": 21,
+      "hex_b_binary": 42,
+      "relationship": "reverse",
+      "name_a": "After Completion",
+      "name_b": "Before Completion"
+    }
+  ],
+  "mutual_pairs": []
+}
